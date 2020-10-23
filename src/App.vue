@@ -14,34 +14,35 @@
           transition="scale-transition"
           width="40"
         />
+        <span>Todo App</span>
       </div>
 
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://github.com/4emp1ON/vue_todo"
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">Git repository</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <TodoList/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import TodoList from './components/TodoList';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    TodoList,
   },
 
   data: () => ({
